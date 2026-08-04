@@ -36,12 +36,8 @@ a{color:inherit;text-decoration:none;}
 /* nav */
 nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:18px;}
-.logo{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:600;font-size:17px;letter-spacing:-.01em;}
-.logo .mark{position:relative;width:20px;height:20px;flex-shrink:0;}
-.logo .mark span{position:absolute;left:0;width:20px;height:5px;border-radius:2px;background:var(--ink);}
-.logo .mark span:nth-child(1){top:0;opacity:.35;}
-.logo .mark span:nth-child(2){top:7px;opacity:.65;}
-.logo .mark span:nth-child(3){top:14px;opacity:1;}
+.logo{display:flex;align-items:center;}
+.logo img{height:18px;display:block;width:auto;}
 .nav-right{display:flex;align-items:center;gap:34px;}
 .nav-links{display:flex;gap:34px;font-size:14px;color:var(--muted);}
 .nav-links a{transition:color .2s;}
@@ -124,7 +120,7 @@ section{padding:96px 0;}
 /* footer */
 footer{border-top:1px solid var(--line);padding:44px 0;margin-top:20px;}
 footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;}
-.foot-brand{font-family:var(--disp);font-weight:600;font-size:16px;}
+.foot-brand img{height:16px;display:block;width:auto;}
 .foot-meta{font-size:12.5px;color:var(--muted);line-height:1.9;text-align:right;}
 @media(max-width:560px){.foot-meta{text-align:left;}}
 </style>
@@ -133,7 +129,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;g
 
 <nav>
   <div class="wrap">
-    <div class="logo"><div class="mark"><span></span><span></span><span></span></div>The Layers Studio</div>
+    <a href="#" class="logo"><img src="assets/logo-black.png" alt="The Layers Studio"></a>
     <div class="nav-right">
       <div class="nav-links">
         <a href="#what">Studio</a>
@@ -232,7 +228,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;g
 
 <footer>
   <div class="wrap">
-    <div class="foot-brand">The Layers Studio</div>
+    <div class="foot-brand"><img src="assets/logo-black.png" alt="The Layers Studio"></div>
     <div class="foot-meta" data-i18n="foot">
       주식회사 더레이어스스튜디오 · The Layers Studio Co., Ltd.<br>
       경기 용인시 수지구 용구대로2790번길 7, 302 - J87호 · © 2026 The Layers Studio. All rights reserved.
