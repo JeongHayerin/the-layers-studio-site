@@ -101,11 +101,8 @@ section{padding:96px 0;}
 .pmeta .k{color:var(--muted);}
 .pmeta .v{color:var(--ink);font-weight:500;}
 .product-img{background:linear-gradient(150deg,#ececea,#f6f6f4);display:flex;align-items:center;justify-content:center;min-height:340px;position:relative;}
-.phone{width:150px;height:300px;background:#111;border-radius:26px;padding:9px;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);}
-.phone .scr{width:100%;height:100%;background:linear-gradient(180deg,#fafafa,#eee);border-radius:18px;position:relative;overflow:hidden;}
-.phone .scr::before{content:"";position:absolute;top:14px;left:14px;right:14px;height:40px;background:#e4e4e2;border-radius:9px;}
-.phone .scr::after{content:"";position:absolute;top:66px;left:14px;right:14px;bottom:14px;
-  background:repeating-linear-gradient(180deg,#eeeeec 0 34px,transparent 34px 46px);border-radius:9px;}
+.phone{width:172px;height:373px;background:#111;border-radius:30px;padding:8px;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);}
+.phone .scr{display:block;width:100%;height:100%;object-fit:cover;object-position:top;border-radius:22px;background:#16161a;}
 
 /* company facts */
 .facts{margin-top:52px;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;}
@@ -203,7 +200,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;g
         </div>
       </div>
       <div class="product-img">
-        <div class="phone"><div class="scr"></div></div>
+        <div class="phone"><img class="scr" src="assets/Onboard.png" alt="Second Pages 온보딩 화면" loading="lazy"></div>
       </div>
     </div>
   </div>
