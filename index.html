@@ -56,7 +56,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:7
 .hero{padding:70px 0 20px;}
 .hero-img{position:relative;width:100%;aspect-ratio:16/8;border-radius:20px;overflow:hidden;
   background:#1a1a1a;display:flex;align-items:flex-end;padding:48px;}
-.hero-img .bg{position:absolute;inset:0;background-image:url('assets/hero.jpg');background-size:cover;background-position:center;z-index:0;}
+.hero-img .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;}
 /* layered translucent plane over the image, echoing the glass panels */
 .hero-img::before{content:"";position:absolute;inset:0;z-index:1;
   background:linear-gradient(90deg,rgba(16,20,26,0.82) 0%,rgba(16,20,26,0.55) 42%,rgba(16,20,26,0.15) 78%,rgba(16,20,26,0.05) 100%);}
@@ -158,7 +158,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;g
 <div class="wrap">
   <header class="hero">
     <div class="hero-img">
-      <div class="bg"></div>
+      <img class="bg" src="assets/hero.jpg" alt="겹겹이 늘어선 반투명 패널 — layered translucent panels" fetchpriority="high">
       <span class="hero-note">Software Studio · Yongin, Korea</span>
       <div class="htxt">
         <div class="brandline">The Layers Studio</div>
