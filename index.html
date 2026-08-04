@@ -63,12 +63,9 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:7
 .hero-img::after{content:"";position:absolute;inset:0;z-index:1;
   background:linear-gradient(180deg,rgba(0,0,0,0.15),rgba(0,0,0,0.0) 30%,rgba(0,0,0,0.25));}
 .hero-img .htxt{position:relative;z-index:3;}
-.hero-img .brandline{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-bottom:18px;}
 .hero-img h1{font-family:var(--disp);font-weight:600;font-size:60px;font-size:clamp(30px,5vw,58px);line-height:1.04;letter-spacing:-.02em;color:#fff;}
 .hero-img h1 .ko{display:block;font-size:.44em;font-weight:500;color:rgba(255,255,255,.82);margin-top:14px;letter-spacing:0;}
-.hero-img .sub{color:rgba(255,255,255,.8);font-size:15px;margin-top:20px;max-width:440px;}
-.hero-note{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.62);position:absolute;top:38px;left:48px;z-index:3;}
-@media(max-width:600px){.hero-img{padding:28px;aspect-ratio:3/4;}.hero-note{top:22px;left:28px;}.hero-img::before{background:linear-gradient(180deg,rgba(16,20,26,0.35),rgba(16,20,26,0.82));}}
+@media(max-width:600px){.hero-img{padding:28px;aspect-ratio:3/4;}.hero-img::before{background:linear-gradient(180deg,rgba(16,20,26,0.35),rgba(16,20,26,0.82));}}
 
 /* section */
 section{padding:96px 0;}
@@ -159,11 +156,8 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;g
   <header class="hero">
     <div class="hero-img">
       <img class="bg" src="assets/hero.jpg" alt="겹겹이 늘어선 반투명 패널 — layered translucent panels" fetchpriority="high">
-      <span class="hero-note">Software Studio · Yongin, Korea</span>
       <div class="htxt">
-        <div class="brandline">The Layers Studio</div>
         <h1 data-i18n="hero_h1">주식회사 더레이어스스튜디오<span class="ko">The Layers Studio Co., Ltd.</span></h1>
-        <p class="sub" data-i18n="hero_sub">모바일 애플리케이션을 직접 기획하고 개발하는 소프트웨어 스튜디오입니다.</p>
       </div>
     </div>
   </header>
@@ -253,7 +247,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;g
 var I18N = {
   ko: {
     hero_h1: '주식회사 더레이어스스튜디오<span class="ko">The Layers Studio Co., Ltd.</span>',
-    hero_sub: '모바일 애플리케이션을 직접 기획하고 개발하는 소프트웨어 스튜디오입니다.',
     what_lead: 'The Layers Studio는 AI를 활용해 창작하고 제품을 만듭니다.<br><span class="g">이와 유사한 사업을 하는 한국의 디자이너를 모아 커뮤니티를 만드는 창작 스튜디오입니다.</span>',
     card1: '자체적으로 제품을 개발하여 판매 및 운영합니다.',
     card2: '광고 사업을 운영합니다.',
@@ -271,7 +264,6 @@ var I18N = {
   },
   en: {
     hero_h1: 'The Layers Studio Co., Ltd.<span class="ko">주식회사 더레이어스스튜디오</span>',
-    hero_sub: 'A software studio that designs, builds, and operates its own mobile applications.',
     what_lead: 'The Layers Studio creates and builds products with AI.<br><span class="g">We are a creative studio bringing together Korean designers in similar businesses to form a community.</span>',
     card1: 'We develop our own products, then sell and operate them ourselves.',
     card2: 'We run an advertising business.',
