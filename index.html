@@ -28,7 +28,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased;}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased;min-width:1000px;}
 a{color:inherit;text-decoration:none;}
 .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
 @media(max-width:600px){.wrap{padding:0 22px;}}
@@ -171,23 +171,23 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;g
 
 <section id="what">
   <div class="wrap">
-    <span class="tag reveal">Principles</span>
-    <p class="lead reveal" data-i18n="what_lead">The Layers Studio는 하나의 원칙 위에 있습니다.<br><span class="g">한 겹이 마른 뒤에야 다음을 얹는다.</span> 하나가 단단해진 뒤에 다음을 시작합니다.</p>
+    <span class="tag reveal">About</span>
+    <p class="lead reveal" data-i18n="what_lead">The Layers Studio는 AI를 활용해 창작하고 제품을 만듭니다.<br><span class="g">이와 유사한 사업을 하는 한국의 디자이너를 모아 커뮤니티를 만드는 창작 스튜디오입니다.</span></p>
     <div class="cards">
       <div class="card reveal">
         <div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 10h16"/></svg></div>
         <h3>Product Design</h3>
-        <p data-i18n="card1">화면 한 장이 아니라 제품 전체의 흐름을 처음부터 설계합니다.</p>
+        <p data-i18n="card1">자체적으로 제품을 개발하여 판매 및 운영합니다.</p>
       </div>
       <div class="card reveal">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
-        <h3>App Development</h3>
-        <p data-i18n="card2">iOS와 Android 앱을 자체 개발합니다. React Native 기반으로 만듭니다.</p>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 10v4h3l6 4V6l-6 4H4z"/><path d="M17 9a5 5 0 010 6"/></svg></div>
+        <h3>Advertising</h3>
+        <p data-i18n="card2">광고 사업을 운영합니다.</p>
       </div>
       <div class="card reveal">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 18V9M9 18V5M14 18v-6M19 18v-9"/></svg></div>
-        <h3>Operation &amp; Growth</h3>
-        <p data-i18n="card3">출시 이후 서비스를 직접 운영하고, 지속 가능한 제품으로 키웁니다.</p>
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5"/><circle cx="17" cy="9.5" r="2.4"/><path d="M15.5 13.9c2.6.3 4.6 2.4 5 4.9"/></svg></div>
+        <h3>Community</h3>
+        <p data-i18n="card3">사업 아이템을 가진 디자이너들이 모여 함께 얘기하고 창작의 꽃을 피울 수 있게 지원합니다.</p>
       </div>
     </div>
   </div>
@@ -254,10 +254,10 @@ var I18N = {
   ko: {
     hero_h1: '주식회사 더레이어스스튜디오<span class="ko">The Layers Studio Co., Ltd.</span>',
     hero_sub: '모바일 애플리케이션을 직접 기획하고 개발하는 소프트웨어 스튜디오입니다.',
-    what_lead: 'The Layers Studio는 하나의 원칙 위에 있습니다.<br><span class="g">한 겹이 마른 뒤에야 다음을 얹는다.</span> 하나가 단단해진 뒤에 다음을 시작합니다.',
-    card1: '화면 한 장이 아니라 제품 전체의 흐름을 처음부터 설계합니다.',
-    card2: 'iOS와 Android 앱을 자체 개발합니다. React Native 기반으로 만듭니다.',
-    card3: '출시 이후 서비스를 직접 운영하고, 지속 가능한 제품으로 키웁니다.',
+    what_lead: 'The Layers Studio는 AI를 활용해 창작하고 제품을 만듭니다.<br><span class="g">이와 유사한 사업을 하는 한국의 디자이너를 모아 커뮤니티를 만드는 창작 스튜디오입니다.</span>',
+    card1: '자체적으로 제품을 개발하여 판매 및 운영합니다.',
+    card2: '광고 사업을 운영합니다.',
+    card3: '사업 아이템을 가진 디자이너들이 모여 함께 얘기하고 창작의 꽃을 피울 수 있게 지원합니다.',
     product_lead: '지금 만들고 있는 <span class="g">첫 번째 레이어.</span>',
     product_desc: '이용자가 자신의 기록을 공유하고, 신뢰할 수 있는 환경에서 소통하는 프라이빗 소셜 네트워킹 앱입니다. 공개 노출을 최소화한 설계로, 작고 단단한 커뮤니티 경험을 지향합니다.',
     product_status: 'In development',
@@ -272,10 +272,10 @@ var I18N = {
   en: {
     hero_h1: 'The Layers Studio Co., Ltd.<span class="ko">주식회사 더레이어스스튜디오</span>',
     hero_sub: 'A software studio that designs, builds, and operates its own mobile applications.',
-    what_lead: 'The Layers Studio is built on a single principle.<br><span class="g">Let each layer dry before adding the next.</span> We begin the next thing only once the last one is solid.',
-    card1: 'We design the full flow of a product from the very beginning — not just single screens.',
-    card2: 'We build our iOS and Android apps in-house, with React Native.',
-    card3: 'After launch, we operate our services ourselves and grow them into sustainable products.',
+    what_lead: 'The Layers Studio creates and builds products with AI.<br><span class="g">We are a creative studio bringing together Korean designers in similar businesses to form a community.</span>',
+    card1: 'We develop our own products, then sell and operate them ourselves.',
+    card2: 'We run an advertising business.',
+    card3: 'We help designers with business ideas come together, talk, and let their creativity bloom.',
     product_lead: 'The <span class="g">first layer</span> we are building.',
     product_desc: 'A private social networking app where people share their own records and connect in a trusted environment. Designed to minimize public exposure, it aims for small, close-knit community experiences.',
     product_status: 'In development',
